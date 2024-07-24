@@ -2,14 +2,14 @@ package OperatorPrograms.com;
 
 import java.util.Scanner;
 
-public class MutiplicationTable {
+public class Divisibilitycheck {
     public static void main(String [] args){
         System.out.println("Enter a number");
         Scanner sc=new Scanner(System.in);
         int num=sc.nextInt();
-        System.out.println("The multiplication table for : "+num);
-        for(int i=1;i<=10;i++){
-            System.out.println(i+" * "+num+" = "+i*num);
-        }
+        if(num%5==0 && num%7==0)
+            System.out.println("The number is divisible by both 5 and 7");
+        else
+            System.out.println("The number is not divisible by 5 and 7");
     }
 }
